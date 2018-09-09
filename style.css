@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family:Arial Verdana;
+  font-size:24px;
+  font-color:white;
+  font-style: italic;
+}
+
+
+a:link, a:visited {
+  border-radius: 5px;
+  background-color: #ffdd1e;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-style:normal;
+  font-family: Arial;
+  display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #e5c200;
+}
+
+.dividertekst {
+  text-align: left;
+  position: absolute;
+  max-width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.welkomstbericht {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url("/afbeeldingen/huis.jpg");
+background:url("/afbeeldingen/huis.jpg");
+    background-color: #cccccc;
+  height: 560px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.boodschapskosten {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url("/afbeeldingen/eten.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.huistaken {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url("/afbeeldingen/thijskeuken.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.saldo {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ), url("/afbeeldingen/groepsfoto.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.yorick {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ), url("/afbeeldingen/yorickthuis.jpg");
+  background-color: #cccccc;
+  height: 800px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.huisinkopen {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ), url("/afbeeldingen/vollekoelkast.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: 65% 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.wieiserthuis {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ), url("/afbeeldingen/aantafel.jpg");
+  background-color: #cccccc;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

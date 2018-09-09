@@ -1,0 +1,9 @@
+Neighbor                Linklayer Address Expire(O) Expire(I)    Netif Refs Prbs RSSI    LQM     NPM    
+192.168.1.1             0:11:32:4d:56:b6  2m39s     2m39s          en0    1 none unknown unknown unknown
+alexs-iphone            cc:2d:b7:c6:c1:41 expired   expired        en0    1 none unknown unknown unknown
+rik                     20:16:d8:fc:6f:97 1m51s     1m52s          en0    1 none unknown unknown unknown
+ipad                    a8:5b:78:d2:f0:69 expired   expired        en0    1 none unknown unknown unknown
+192.168.1.79            24:0:ba:c0:1e:33  expired   expired        en0    1 none unknown unknown unknown
+192.168.1.255           ff:ff:ff:ff:ff:ff (none)    (none)         en0
+224.0.0.251             1:0:5e:0:0:fb     (none)    (none)         en0
+broadcasthost           ff:ff:ff:ff:ff:ff (none)    (none)         en0
