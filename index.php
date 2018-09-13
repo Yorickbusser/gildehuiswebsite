@@ -69,13 +69,12 @@
         <h1>Is EJ weer brak?</h1>
         Je bent 's morgens half acht fris en fruitig opgestaan om braaf
         op je fiets te stappen en naar school te gaan. Nog even langs de keuken voor een laatste
-        boterhammetje met schuddebuikjes. Onverklaarbaar ontdek je op de
-        keukentafel enkele kruimels, een onaangeschoven stoel zetelt zich voor een houten snijplank met tomatensausvlekken
-        en de oven staat op een kier; een vreemd ontbijt. Bovendien, je had de keuken gisterenavond toch netjes achtergelaten?
-        Je haalt je schouders op tot je plots in een ranzig-natte substantie
+        boterhammetje met schuddebuikjes. Aan de keukentafel ontdek je een wat scheef aangeschoven stoel geplaatst achter een houten snijplank met tomatensausvlekken.
+        Rondom de snijplank liggen enkele kruimels verspreid en de oven staat op een kier; een vreemd ontbijt. Je had de keuken gisterenavond toch netjes achtergelaten? 
+        Je haalt je schouders op en loopt naar je kastje met het pak schiddebuikjes tot je plots in een ranzig-natte substantie
         stapt en het kwartje valt: het gestommel op de trap vannacht rond vieren, de toch wat scheefgeplaatste
         zilvergrijze herenfiets voor het huis en de ananas onder je rechtersok; de pizzaresten van EJ.
-        Sta nooit meer voor verrassingen en check of EJ weer eens brak is.
+        Sta nooit meer voor verrassingen en check of EJ weer eens brak is.(voeg een kans op brakheid meter toe adhv laatste tijdstip online geweest.
         <br><br>
         <a href="isEJbrak.php">is EJ weer brak?</a>
       </div>
