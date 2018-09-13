@@ -10,7 +10,6 @@
 
     <div class="welkomstbericht">
       <div class="dividertekst">
-    <!--  <img src="/afbeeldingen/huis.jpg"> -->
         <h1>Het Gildehuis</h1>
         <h3>Welkom op de website van Het Gildehuis...</h3>
         ...voor het verhalen van al uw booschappen en huisinkopen, het bekijken van je saldo en het checken of je lievelingshuisgenoot thuis is. De website is alleen vanaf onze wifi in het huis toegankelijk.
@@ -20,8 +19,9 @@
     <div class="boodschapskosten">
       <div class="dividertekst">
         <h1>Boodschappen</h1>
-        Ik wil de kosten van mijn boodschappen verhalen.<br><br>
-        <a style="font-family: Arial Verdana, sans-serif;" href="boodschappen.php">ik heb gekookt</a>
+        Ik wil de kosten van mijn boodschappen verhalen. Je kunt ook een overzicht van alle gekookte maaltijden bekijken.<br><br>
+        <a href="boodschappen.php">ik heb gekookt</a><br><br>
+        <a href="alledeclaraties.php">overzicht alle maaltijden</a>
       </div>
     </div>
 
@@ -39,9 +39,9 @@
         Wil je graag zien wie van je huisgenootjes thuis is? Een huisgenoot is
         aanwezig indien zijn of haar telefoon
         aanstaat en met onze wifi is verbonden.<br><br>
-        <a href="wieiserthuis.php">Welke huisgenootjes zijn thuis?</a><br><br>
+        <a href="wieiserthuis.php">welke huisgenootjes zijn thuis?</a><br><br>
         Je kunt ook checken of je lievelingshuisgenoot thuis is.<br><br>
-        <a href="lievelingshuisgenoot.php">Is mijn lievelingshuisgenoot thuis?</a>
+        <a href="lievelingshuisgenoot.php">is mijn lievelingshuisgenoot thuis?</a>
       </div>
     </div>
 
@@ -51,19 +51,35 @@
         Heb je al een maand je huistaak niet gedaan? Ben je nu
         vergeten wat je ook al weer moest doen? Schaam je, zelfs Thijs heeft
         een keer zijn huistaak gedaan.<br><br>
-        <a href="huistaken.php">Vind mijn huistaak</a>
+        <a href="huistaken.php">vind mijn huistaak</a>
       </div>
     </div>
 
     <div class="huisinkopen">
       <div class="dividertekst">
         <h1>Huisinkopen</h1>
+        Verhaal hier uw huisinkopen!Verhaal hier uw huisinkopen!Verhaal hier uw huisinkopen!
         Verhaal hier uw huisinkopen!<br><br>
         <a href="huisinkopen.php">huisinkopen verhalen</a>
       </div>
     </div>
 
-
+    <div class="isEJbrak">
+      <div class="dividertekst">
+        <h1>Is EJ weer brak?</h1>
+        Je bent 's morgens half acht fris en fruitig opgestaan om braaf
+        op je fiets te stappen en naar school te gaan. Nog even langs de keuken voor een laatste
+        boterhammetje met schuddebuikjes. Onverklaarbaar ontdek je op de
+        keukentafel enkele kruimels, een onaangeschoven stoel zetelt zich voor een houten snijplank met tomatensausvlekken
+        en de oven staat op een kier; een vreemd ontbijt. Bovendien, je had de keuken gisterenavond toch netjes achtergelaten?
+        Je haalt je schouders op tot je plots in een ranzig-natte substantie
+        stapt en het kwartje valt: het gestommel op de trap vannacht rond vieren, de toch wat scheefgeplaatste
+        zilvergrijze herenfiets voor het huis en de ananas onder je rechtersok; de pizzaresten van EJ.
+        Sta nooit meer voor verrassingen en check of EJ weer eens brak is.
+        <br><br>
+        <a href="isEJbrak.php">is EJ weer brak?</a>
+      </div>
+    </div>
 
   </body>
 
