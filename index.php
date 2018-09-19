@@ -3,11 +3,10 @@
 
   <head>
     <title>Het Gildehuis</title>
-    <link rel="stylesheet" type="text/class" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
-
     <div class="welkomstbericht">
       <div class="dividertekst">
         <h1>Het Gildehuis</h1>
@@ -79,7 +78,5 @@
         <a href="isEJbrak.php">is EJ weer brak?</a>
       </div>
     </div>
-
   </body>
-
 </html>
