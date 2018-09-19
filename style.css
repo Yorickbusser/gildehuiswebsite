@@ -48,20 +48,21 @@ a:hover {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
-    ), url("/afbeeldingen/huis.jpg");
+    ), url(afbeeldingen/huis.jpg);
   background-color: #cccccc;
   min-height: 560px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+/*min-height:100vh;*/
 }
 
 .boodschapskosten {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
-    ), url("/afbeeldingen/eten.jpg");
+    ), url(afbeeldingen/eten.jpg);
   background-color: #cccccc;
   height: 600px;
   background-position: top;
@@ -74,7 +75,7 @@ a:hover {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
-    ), url("/afbeeldingen/groepsfoto.jpg");
+    ), url(afbeeldingen/groepsfoto.jpg);
   background-color: #cccccc;
   height: 500px;
   background-position: center;
@@ -87,7 +88,7 @@ a:hover {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
-    ), url("/afbeeldingen/aantafel.jpg");
+    ), url(afbeeldingen/aantafel.jpg);
   background-color: #cccccc;
   height: 800px;
   background-position: center;
@@ -100,7 +101,7 @@ a:hover {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
-    ), url("/afbeeldingen/thijskeuken.jpg");
+    ), url(afbeeldingen/thijskeuken.jpg);
   background-color: #cccccc;
   height: 500px;
   background-position: top;
@@ -113,7 +114,7 @@ a:hover {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
-    ), url("/afbeeldingen/yorickthuis.jpg");
+    ), url(afbeeldingen/yorickthuis.jpg);
   background-color: #cccccc;
   height: 800px;
   background-position: top;
@@ -126,7 +127,7 @@ a:hover {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
-    ), url("/afbeeldingen/vollekoelkast.jpg");
+    ), url(afbeeldingen/vollekoelkast.jpg);
   background-color: #cccccc;
   height: 500px;
   background-position: 65% 35%;
@@ -139,7 +140,7 @@ a:hover {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
-    ), url("/afbeeldingen/EJbrak.jpg");
+    ), url(afbeeldingen/EJbrak.jpg);
   background-color: #cccccc;
   height: 1300px;
   background-position: 50% 50%;
@@ -152,7 +153,7 @@ a:hover {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
-    ), url("/afbeeldingen/groepsfoto2.jpg");
+    ), url(afbeeldingen/groepsfoto2.jpg);
   background-color: #cccccc;
   height: 3000px;
   background-position: center;
@@ -182,7 +183,7 @@ input[type=date]{
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
-    ), url("/afbeeldingen/groepsfoto2.jpg");
+    ), url(afbeeldingen/groepsfoto2.jpg);
   background-color: #cccccc;
   height: 900px;
   background-position: center;
