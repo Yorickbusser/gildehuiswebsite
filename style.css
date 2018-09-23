@@ -1,64 +1,66 @@
 body {
   margin: 0;
-  font-family:Arial Verdana;
+  font-family:Arial Verdana, serif;
   font-size:24px;
   font-style: italic;
+  color: #e8e2d5;
 }
 
-
 a {
-  color: black;
-  background-color: #e28b00;
+  color: #333333;
+  background-color: #ffcc35;
   padding: 14px 20px;
+  border-radius: 5px;
   text-decoration: none;
   font-style:normal;
-  border-radius: 5px;
   font-family: Arial Verdana, sans-serif;
   display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 a:hover {
-  background-color: #cc7d00;
+  background-color: #e5b62b;
   padding: 14px 20px;
-  color: black;
   text-decoration: none;
 }
 
+/*veelgebruikte dividers*/
 .dividertekst {
-  color: white;
-  text-align: left;
+  width: 93vw;
+  max-width: 600px;
   position: absolute;
-  max-width: 500px;
-  top: 50%;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 
 .dividertekstlijst {
-  color: white;
+
   text-align: left;
   position: absolute;
   max-width: 750px;
   top: 5%;
-  left: 50%;
-  transform: translate(-50%, -5%);
+
 }
 
+/*alle specifieke dividers*/
 .welkomstbericht {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ), url(afbeeldingen/huis.jpg);
   background-color: #cccccc;
-  min-height: 560px;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-/*min-height:100vh;*/
+  /*min-height:100vh;*/
 }
 
-.boodschapskosten {
+.boodschappen {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
@@ -84,7 +86,7 @@ a:hover {
   position: relative;
 }
 
-.wieiserthuis {
+.aanwezig {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
@@ -136,6 +138,8 @@ a:hover {
   position: relative;
 }
 
+
+
 .isEJbrak {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
@@ -163,35 +167,95 @@ a:hover {
 }
 
 select {
-  font-size: 50px;
+  color: #e8e2d5;
+  font-size: 25px;
+  background: transparent;
+  margin-bottom: 25px;
+  width:50%;
 }
-
 input[type=text]{
+  color: #e8e2d5;
   font-size: 25px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #e8e2d5;
+  margin-bottom: 25px;
+  width:50%;
 }
-
 input[type=number]{
+  color: #e8e2d5;
   font-size: 25px;
-  width: 295px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #e8e2d5;
+  margin-bottom: 25px;
+  width:48%;
 }
-
 input[type=date]{
+  color: #e8e2d5;
   font-size: 25px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #e8e2d5;
+  margin-bottom: 25px;
+  width:50%;
+}
+label{
+  color: #51504f;
+  font-style:normal;
+  font-family: Arial Verdana, sans-serif;
+}
+input[type=checkbox]{
+    opacity: 0;
+}
+input[type=checkbox]:checked + label {
+  color: #ffcc35;
+}
+ul {
+  margin-left:-50px;
+  list-style-type: none;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
 }
 
+/*formulier voor declareren boodschappen met blur */
 .declarerenachtergrond {
-  background-image: linear-gradient(
+  background: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
-    ), url(afbeeldingen/groepsfoto2.jpg);
-  background-color: #cccccc;
-  height: 900px;
-  background-position: center;
+    ), url(afbeeldingen/groepsfoto2.jpg) fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  background-position: 68%;
+  padding-top: 300px;
+  padding-bottom: 75px;
+
 }
 
-.kleur {
+.formulier {
+  width: 85vw;
+  max-width: 600px;
+  background: inherit;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: auto;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  border-radius: 15px;
+}
 
+.formulier::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: inherit;
+  filter: blur(10px);
+  box-shadow: inset 0 0 2000px rgba(255,255,255,.5);
+  margin: -20px;
 }

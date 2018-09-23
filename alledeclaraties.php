@@ -10,8 +10,9 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Het Gildehuis</title>
-  <link rel="stylesheet" type="text/class" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <div class="allemaaltijden">
@@ -19,7 +20,15 @@
     <h1>Overzicht van alle maaltijden</h1>
 
     <?php
-    echo "<table>\n\n";
+    echo "
+      <table>
+        <tr>
+          <th>Kok</th>
+          <th>Datum</th>
+          <th>Gerecht</th>
+          <th>Kosten</th>
+          <th>Meeëters</th>
+        </tr>\n\n";
     $f = fopen("invoergegevens.csv", "r");
     while (($line = fgetcsv($f)) !== false) {
             echo "<tr>";
@@ -40,7 +49,7 @@
     //is de wasmachine vrij? ja geen idee man
     ?>
 
-    <br><a href="index.php">terug</a>
+    <br><a href="index.php">Terug</a>
   </div>
 </div>
 
