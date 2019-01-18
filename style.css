@@ -6,6 +6,7 @@ body {
   color: #e8e2d5;
 }
 
+/*stijl van hyperlinks*/
 a {
   color: #333333;
   background-color: #ffcc35;
@@ -26,6 +27,7 @@ a:hover {
   text-decoration: none;
 }
 
+
 /*veelgebruikte dividers*/
 .dividertekst {
   width: 93vw;
@@ -44,6 +46,7 @@ a:hover {
   top: 5%;
 
 }
+
 
 /*alle specifieke dividers*/
 .welkomstbericht {
@@ -138,8 +141,6 @@ a:hover {
   position: relative;
 }
 
-
-
 .isEJbrak {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
@@ -166,6 +167,8 @@ a:hover {
   position: relative;
 }
 
+
+/*stijl van knoppen en invoervakjes*/
 select {
   color: #e8e2d5;
   font-size: 25px;
@@ -222,6 +225,7 @@ ul {
   -moz-columns: 3;
 }
 
+
 /*formulier voor declareren boodschappen met blur */
 .declarerenachtergrond {
   background: linear-gradient(
@@ -258,4 +262,25 @@ ul {
   filter: blur(10px);
   box-shadow: inset 0 0 2000px rgba(255,255,255,.5);
   margin: -20px;
+}
+
+/*profielfoto's*/
+.profielfoto {
+object-fit: cover;
+width:200px;
+height:200px;
+border-radius:50%;
+float:left;
+}
+
+.profiellijstitem {
+  height: 200px;
+}
+
+.profiellijst {
+  width: 93vw;
+  max-width: 600px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
