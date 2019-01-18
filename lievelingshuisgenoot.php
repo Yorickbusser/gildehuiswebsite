@@ -6,7 +6,7 @@ $yorick='Helaas, Yorick is nu niet thuis';
 if (strpos($adressen, '192.168.2.9') !== false) {
     $yorick= 'Fantastisch, je lievelingshuisgenoot Yorick is thuis! Toon hem hoeveel je van hem houdt door je huistaak te doen.';
 }
-//is ej weer brak?
+
 ?>
 
 <!DOCTYPE html>

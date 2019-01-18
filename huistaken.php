@@ -6,8 +6,9 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
+<div class="profielenachtergrond">
+  <div class="profiellijst">
 
-<div class="profiellijst">
 
   <div class="profiellijstitem">
     <img src="afbeeldingen/img1.jpg" class="profielfoto">
@@ -16,6 +17,10 @@
   <div class="profiellijstitem">
     <img src="afbeeldingen/yana.jpg" class="profielfoto">
     <h1 style="line-height:200px;">Toilet beneden</h1>
+  </div>
+  <div class="profiellijstitem">
+    <img src="afbeeldingen/kris.jpg" class="profielfoto">
+    <h1 style="line-height:200px;">Douches</h1>
   </div>
   <div class="profiellijstitem">
     <img src="afbeeldingen/femke.jpg" class="profielfoto">
@@ -34,14 +39,12 @@
     <h1 style="line-height:200px;">Keukenvloer</h1>
   </div>
   <div class="profiellijstitem">
-    <img src="afbeeldingen/img1.jpg" class="profielfoto">
-    <h1 style="line-height:200px;">Trap en hal</h1>
-  </div>
-  <div class="profiellijstitem">
-    <img src="afbeeldingen/img1.jpg" class="profielfoto">
-    <h1 style="line-height:200px;">Trap en hal</h1>
+    <img src="afbeeldingen/daan.jpg" class="profielfoto">
+    <h1 style="line-height:200px;">Huiswas</h1>
   </div>
 
 </div>
-  
+
+</div>
+
 </html>
