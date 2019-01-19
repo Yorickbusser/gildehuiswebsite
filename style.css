@@ -9,19 +9,23 @@ body {
 /*stijl van hyperlinks*/
 a {
   color: #333333;
-  background-color: #ffcc35;
+  background-color: transparent;
   padding: 14px 20px;
-  border-radius: 5px;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: #ffcc35;
   text-decoration: none;
   font-style:normal;
   font-family: Arial Verdana, sans-serif;
+  color: #ffcc35;
   display: inline-block;
   position: relative;
   left: 50%;
   transform: translate(-50%, 0%);
 }
 a:hover {
-  background-color: #e5b62b;
+  color: black;
+  background-color: #ffcc35;
   padding: 14px 20px;
   text-decoration: none;
 }
@@ -195,6 +199,22 @@ input[type=date]{
   margin-bottom: 25px;
   width:50%;
 }
+input[type=submit]{
+  background-color: transparent;
+  padding: 14px 20px;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: #ffcc35;
+  text-decoration: none;
+  font-style:normal;
+  font-family: Arial Verdana, sans-serif;
+  color: #ffcc35;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
 label{
   color: #51504f;
   font-style:normal;
@@ -254,8 +274,7 @@ ul {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
-    ), url(afbeeldingen/groepsfoto2.jpg);
-  height: 2000px;
+    ), url(afbeeldingen/groepsfoto.jpg);
   min-width: 600px;
   background-position: top;
   background-size: cover;
@@ -275,6 +294,7 @@ ul {
 }
 .profiellijstitem {
   height: 200px;
+  margin-bottom:20px;
 }
 .profiellijst {
   width: 600px;

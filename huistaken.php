@@ -44,6 +44,7 @@
   </div>
 
 </div>
+//maak een klaagmuur waarbij je iemand kunt selecteren die zijn huistaak niet heeft gedaan
 
 </div>
 

@@ -11,7 +11,7 @@
     <div class="declarerenachtergrond">
       <div class="formulier">
         <h1>Declareer je maaltijd</h1>
-        <form action="alledeclaraties.php" method="post">
+        <form action="declareren_geslaagd.php" method="post">
           Wie heeft er gekookt?<br>
           <select name="kok">
             <option value="lana">Lana</option>
@@ -26,7 +26,7 @@
           <input name="gerecht" type="text" placeholder="lasagne"><br>
 
           De kosten van het avondeten zijn<br>
-          €<input name="bedrag" type="number" step="0.05" placeholder="42,99"><br>
+          €<input name="bedrag" type="number" step="0.01" placeholder="42,99"><br>
 
           Wie hebben er meegegeten?<br>
           <input type="hidden" name="lana" value=0>

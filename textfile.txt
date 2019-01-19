@@ -1,10 +1,13 @@
 Neighbor                Linklayer Address Expire(O) Expire(I)    Netif Refs Prbs RSSI    LQM     NPM    
-192.168.2.1             50:7e:5d:b7:ce:42 2m30s     2m30s          en1    1 none unknown unknown unknown
+192.168.2.1             50:7e:5d:b7:ce:42 2m2s      2m2s           en1    1 none unknown unknown unknown
+android-fbb91b50b07f22a5.home f8:84:f2:17:bb:ac expired   14s            en1    1 none unknown unknown unknown
 192.168.2.5             c4:61:8b:5e:5:34  expired   expired        en1    1 none unknown unknown unknown
-chromecast.home         f4:f5:d8:92:9:92  8s        1m1s           en1    1 none unknown unknown unknown
-192.168.2.11            a8:5b:78:d2:f0:69 1m23s     1m26s          en1    1 none unknown unknown unknown
-192.168.2.253           2c:95:7f:5c:ab:56 30s       1m57s          en1    2 none unknown unknown unknown
-router.home             2c:95:7f:5c:ab:56 1m57s     1m57s          en1    2 none unknown unknown unknown
+chromecast.home         f4:f5:d8:92:9:92  40s       1m4s           en1    1 none unknown unknown unknown
+192.168.2.11            a8:5b:78:d2:f0:69 31s       35s            en1    1 none unknown unknown unknown
+iphone-van-jan.home     78:88:6d:11:de:f3 1m35s     1m48s          en1    1 none unknown unknown unknown
+192.168.2.13            e0:ac:cb:8d:80:54 1m36s     1m36s          en1    1 none unknown unknown unknown
+192.168.2.253           2c:95:7f:5c:ab:56 expired   1m48s          en1    2 none unknown unknown unknown
+router.home             2c:95:7f:5c:ab:56 1m48s     1m48s          en1    2 none unknown unknown unknown
 192.168.2.255           ff:ff:ff:ff:ff:ff (none)    (none)         en1
 224.0.0.251             1:0:5e:0:0:fb     (none)    (none)         en1
 239.255.255.250         1:0:5e:7f:ff:fa   (none)    (none)         en1
