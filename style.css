@@ -51,8 +51,8 @@ a:hover {
       rgba(0, 0, 0, 0.6)
     ), url(afbeeldingen/huis.jpg);
   background-color: #cccccc;
-  height: 70vh;
-  background-position: center;
+  height: 75vh;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -149,6 +149,7 @@ a:hover {
     ), url(afbeeldingen/groepsfoto2.jpg);
   background-color: #cccccc;
   height: 3000px;
+  min-width: 1500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -224,7 +225,6 @@ ul {
   background-position: 68%;
   padding-top: 300px;
   padding-bottom: 75px;
-
 }
 .formulier {
   width: 85vw;
@@ -249,6 +249,21 @@ ul {
   margin: -20px;
 }
 
+/*stijl voor saldo-overzicht*/
+.saldoachtergrond {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ), url(afbeeldingen/groepsfoto2.jpg);
+  height: 2000px;
+  min-width: 600px;
+  background-position: top;
+  background-size: cover;
+}
+
+
+
+
 /*profielfoto's*/
 .profielfoto {
   object-fit: cover;
@@ -260,26 +275,20 @@ ul {
 }
 .profiellijstitem {
   height: 200px;
-  width: 600px;
 }
 .profiellijst {
-  width: 93vw;
-  max-width: 600px;
-  position: absolute;
+  width: 600px;
+  position: relative;
   left: 50%;
   transform: translate(-50%, 0%);
 }
-
 .profielenachtergrond {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ), url(afbeeldingen/raampoetsen.jpg);
-  background-color: #cccccc;
   height: 2000px;
   min-width: 600px;
   background-position: top;
-  background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }

@@ -1,9 +1,12 @@
-
-
 <?php
   $file_open = fopen("invoergegevens.csv", "a");
   fputcsv($file_open, $_POST);
   fclose($file_open);
+
+  //maak van het .csv-bestand een array met als elementen de rijen uit het .csv-bestand
+  $csv = array_map('str_getcsv', file('invoergegevens.csv'));
+  array_column($csv, 0)[0];
+
 ?>
 
 <!DOCTYPE html>
@@ -15,41 +18,38 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<div class="allemaaltijden">
-  <div class="dividertekstlijst">
-    <h1>Overzicht van alle maaltijden</h1>
+<div class="profielenachtergrond">
+  <div class="profiellijst">
 
-    <?php
-    echo "
-      <table>
-        <tr>
-          <th>Kok</th>
-          <th>Datum</th>
-          <th>Gerecht</th>
-          <th>Kosten</th>
-          <th>Meeëters</th>
-        </tr>\n\n";
-    $f = fopen("invoergegevens.csv", "r");
-    while (($line = fgetcsv($f)) !== false) {
-            echo "<tr>";
-            foreach ($line as $cell) {
-              if($cell !== "0"){
-                    echo "<td> &nbsp" . htmlspecialchars($cell) . "&nbsp </td>";}
-            }
-            echo "</tr>\n";
-    }
-    fclose($f);
-    echo "\n</table>";
-    //idee:welkomstbericht gekoppeld aan ip-adres van apparaat
-    //idee: automatisch bonnetje scannen met de database van onze ah
-    //berichten plaatsen
-    //zien wie er thuis is door ip telefoon
-    //is de ah nog open?
-    //is de uni nog open?
-    //is de wasmachine vrij? ja geen idee man
-    ?>
 
-    <br><a href="index.php">Terug</a>
+
+    <?php $i=0; foreach (array_column($csv, 0) as $kok) {?>
+
+      <div class="profiellijstitem">
+        <img src="<?php echo "afbeeldingen/" . $kok . ".jpg"; ?>" class="profielfoto">
+        <?php echo $csv[$i][1], '<br>',
+                   $csv[$i][2], '<br>',
+                   $csv[$i][3], '<br>',
+                   $csv[$i][4], $csv[$i][5], $csv[$i][6], $csv[$i][7], $csv[$i][8],
+                   $csv[$i][9];
+        ?>
+      </div>
+
+    <?php $i=$i+1;};  ?>
+
+
+
+    <div class="profiellijstitem">
+      <img src="<?php echo "afbeeldingen/" . $csv[0][0] . ".jpg"; ?>" class="profielfoto">
+      <?php print_r($csv[0]); ?>
+    </div>
+
+
+
+
+
+
+
   </div>
 </div>
 

@@ -23,7 +23,7 @@
         <h1>Het Gildehuis</h1>
         Ik wil de kosten van mijn boodschappen verhalen. Je kunt ook een overzicht
         van alle gekookte maaltijden bekijken.<br><br>
-        <a href="boodschappen.php">Ik heb gekookt</a><br><br>
+        <a href="declareren.php">Ik heb gekookt</a><br><br>
         <a href="alledeclaraties.php">Overzicht alle maaltijden</a>
       </div>
     </div>

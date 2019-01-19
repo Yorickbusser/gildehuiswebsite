@@ -1,25 +1,24 @@
 <?php
 $allemaaltijden = array_map('str_getcsv', file('invoergegevens.csv'));
 
-
+/*We maken een functie die een huisgenoot (aangegeven met $huisgenoot)
+en een lijst met maaltijden (angegeven met $allemaaltijden) stuurt naar het saldo van deze huisgenoot.*/
 function saldocalculator($allemaaltijden, $huisgenoot){
+  /*we beginnen met een saldo van 0 euro*/
   $saldo=0;
-  $oudeschuld = array("daan"=>175.86, "yana"=>87.66, "yorick"=>277.07, "kris"=>154.86,
-  "joris"=>127.91, "alex"=>408.67, "rick"=>-55.29,
-  "lana"=>-115.30, "emma"=>7.66, "ej"=>25.87, "femke"=>132.16);
 
-
+  /*voor elke maaltijd in de maaltijdenlijst gaan we iets doen.*/
   foreach($allemaaltijden as $avondmaal){
-    //We berekenen eerst het aantal personen n
-    //dat heeft meegegeten met het avondmaal.
+    /*Voor de gegeven maaltijd berekenen we het aantal personen $n
+    dat heeft meegegeten met het avondmaal.*/
     $n=0;
     for($i=4; $i<=count($avondmaal)-1; $i++){
       if($avondmaal[$i] !== "0"){
         $n=$n+1;
       }
     }
-    //Als de huisgenoot heeft meegegeten, dan moeten
-    //er kosten aan het saldo worden toegevoegd.
+    /*Als de huisgenoot heeft meegegeten, dan moeten
+    er kosten aan het saldo worden toegevoegd.*/
     if(in_array($huisgenoot, $avondmaal)){
       $saldo=$saldo - $avondmaal[3]/$n;
     }
@@ -29,8 +28,17 @@ function saldocalculator($allemaaltijden, $huisgenoot){
         $saldo=$saldo+$avondmaal[3];
     }
   }
+  /*We zetten de nog openstaande schuld in de array $oudeschuld.*/
+  $oudeschuld = array("daan"=>175.86, "yana"=>87.66, "yorick"=>277.07, "kris"=>154.86,
+  "joris"=>127.91, "alex"=>408.67, "rick"=>-55.29,
+  "lana"=>-115.30, "emma"=>7.66, "ej"=>25.87, "femke"=>132.16);
+
   return $saldo - $oudeschuld[$huisgenoot];
 }
+
+
+
+/*We berekenen voor elk saldo een kleur. Hoe meer schuld hoe roder, hoe minder schul hoe groener.*/
 $lanarood= -round(saldocalculator($allemaaltijden, "lana"));
 $lanagroen= 255-2*$lanarood;
 $jorisrood= -round(saldocalculator($allemaaltijden, "joris"));
@@ -55,83 +63,90 @@ $femkerood= -round(saldocalculator($allemaaltijden, "femke"));
 $femkegroen= 255-2*$femkerood;
 ?>
 
-<!DOCTYPE html>
+
 <html>
 
   <head>
     <title>Het Gildehuis</title>
-    <link rel="stylesheet" type="text/class" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
-  <body>
-    <div class="declarerenachtergrond">
-      <div class="dividertekst">
-        <h1>Bekijk je saldo</h1><br>
+  <div class="saldoachtergrond">
+    <div class="profiellijst">
 
-        <table>
-          <tr>
-            <th>Huisgenoot</th>
-            <th>Saldo</th>
-          </tr>
-          <tr>
-            <th>Lana</th>
-            <th><div style="color: rgb(<?php echo $lanarood;?>,<?php echo $lanagroen;?>,0);">
-              <?php echo "€".round(saldocalculator($allemaaltijden, "lana"),2);?></div></th>
-          </tr>
-          <tr>
-            <th>yorick</th>
-            <th><div style="color: rgb(<?php echo $yorickrood;?>,<?php echo $yorickgroen;?>,0);">
-              <?php echo "€".round(saldocalculator($allemaaltijden, "yorick"),2);?></div></th>
-          </tr>
-          <tr>
-            <th>Joris</th>
-            <th><div style="color: rgb(<?php echo $jorisrood;?>,<?php echo $jorisgroen;?>,0);">
-              <?php echo "€".round(saldocalculator($allemaaltijden, "joris"),2);?></div></th>
-          </tr>
-          <tr>
-            <th>Yana</th>
-            <th><div style="color: rgb(<?php echo $yanarood;?>,<?php echo $yanagroen;?>,0);">
-              <?php echo "€".round(saldocalculator($allemaaltijden, "yana"),2);?></div></th>
-          </tr>
-          <tr>
-            <th>Emma</th>
-            <th><div style="color: rgb(<?php echo $emmarood;?>,<?php echo $emmagroen;?>,0);">
-              <?php echo "€".round(saldocalculator($allemaaltijden, "emma"),2);?></div></th>
-          </tr>
-          <tr>
-            <th>Kris</th>
-            <th><div style="color: rgb(<?php echo $krisrood;?>,<?php echo $krisgroen;?>,0);">
-              <?php echo "€".round(saldocalculator($allemaaltijden, "kris"),2);?></div></th>
-          </tr>
-          <tr>
-            <th>EJ</th>
-            <th><div style="color: rgb(<?php echo $ejrood;?>,<?php echo $ejgroen;?>,0);">
-              <?php echo "€".round(saldocalculator($allemaaltijden, "ej"),2);?></div></th>
-          </tr>
-          <tr>
-            <th>Alex</th>
-            <th><div style="color: rgb(<?php echo $alexrood;?>,<?php echo $alexgroen;?>,0);">
-              <?php echo "€".round(saldocalculator($allemaaltijden, "alex"),2);?></div></th>
-          </tr>
-          <tr>
-            <th>Rick</th>
-            <th><div style="color: rgb(<?php echo $rickrood;?>,<?php echo $rickgroen;?>,0);">
-              <?php echo "€".round(saldocalculator($allemaaltijden, "rick"),2);?></div></th>
-          </tr>
-          <tr>
-            <th>Femke</th>
-            <th><div style="color: rgb(<?php echo $femkerood;?>,<?php echo $femkegroen;?>,0);">
-              <?php echo "€".round(saldocalculator($allemaaltijden, "femke"),2);?></div></th>
-          </tr>
-          <tr>
-            <th>Daan</th>
-            <th><div style="color: rgb(<?php echo $daanrood;?>,<?php echo $daangroen;?>,0);">
-              <?php echo "€".round(saldocalculator($allemaaltijden, "daan"),2);?></div></th>
-          </tr>
+      <div class="profiellijstitem">
+        <img src="afbeeldingen/img1.jpg" class="profielfoto">
+        <h1 style="line-height:200px;">
+          <div style="color: rgb(<?php echo $yorickrood;?>,<?php echo $yorickgroen;?>,0);">
+            <?php echo "€".round(saldocalculator($allemaaltijden, "yorick"),2);?>
+          </div>
+        </h1>
+      </div>
 
-        </table>
+      <div class="profiellijstitem">
+        <img src="afbeeldingen/yana.jpg" class="profielfoto">
+        <h1 style="line-height:200px;">
+          <div style="color: rgb(<?php echo $yanarood;?>,<?php echo $yanagroen;?>,0);">
+            <?php echo "€".round(saldocalculator($allemaaltijden, "yana"),2);?>
+          </div>
+        </h1>
+      </div>
+
+      <div class="profiellijstitem">
+        <img src="afbeeldingen/kris.jpg" class="profielfoto">
+        <h1 style="line-height:200px;">
+          <div style="color: rgb(<?php echo $krisrood;?>,<?php echo $krisgroen;?>,0);">
+            <?php echo "€".round(saldocalculator($allemaaltijden, "kris"),2);?>
+          </div>
+        </h1>
+      </div>
+
+      <div class="profiellijstitem">
+        <img src="afbeeldingen/femke.jpg" class="profielfoto">
+        <h1 style="line-height:200px;">
+          <div style="color: rgb(<?php echo $femkerood;?>,<?php echo $femkegroen;?>,0);">
+            <?php echo "€".round(saldocalculator($allemaaltijden, "femke"),2);?>
+          </div>
+        </h1>
+      </div>
+
+      <div class="profiellijstitem">
+        <img src="afbeeldingen/EJbrak.jpg" class="profielfoto">
+        <h1 style="line-height:200px;">
+          <div style="color: rgb(<?php echo $ejrood;?>,<?php echo $ejgroen;?>,0);">
+            <?php echo "€".round(saldocalculator($allemaaltijden, "ej"),2);?>
+          </div>
+        </h1>
+      </div>
+
+      <div class="profiellijstitem">
+        <img src="afbeeldingen/joris.jpg" class="profielfoto">
+        <h1 style="line-height:200px;">
+          <div style="color: rgb(<?php echo $jorisrood;?>,<?php echo $jorisgroen;?>,0);">
+            <?php echo "€".round(saldocalculator($allemaaltijden, "joris"),2);?>
+          </div>
+        </h1>
+      </div>
+
+      <div class="profiellijstitem">
+        <img src="afbeeldingen/emma.jpg" class="profielfoto">
+        <h1 style="line-height:200px;">
+          <div style="color: rgb(<?php echo $emmarood;?>,<?php echo $emmagroen;?>,0);">
+            <?php echo "€".round(saldocalculator($allemaaltijden, "emma"),2);?>
+          </div>
+        </h1>
+      </div>
+
+      <div class="profiellijstitem">
+        <img src="afbeeldingen/daan.jpg" class="profielfoto">
+        <h1 style="line-height:200px;">
+          <div style="color: rgb(<?php echo $daanrood;?>,<?php echo $daangroen;?>,0);">
+            <?php echo "€".round(saldocalculator($allemaaltijden, "daan"),2);?>
+          </div>
+        </h1>
+      </div>
       </div>
     </div>
-  </body>
+
 
 </html>
