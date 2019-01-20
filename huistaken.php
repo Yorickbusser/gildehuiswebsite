@@ -7,8 +7,11 @@
 </head>
 
 <div class="profielenachtergrond">
-  <div class="profiellijst">
 
+  <div class="profiellijst">
+    <h1>Overzicht huistaken</h1>
+    Dit is een overzicht van alle huistaken. Je kunt onderaan de pagina
+    klagen over mensen die hun huistaak niet hebben gedaan.
 
   <div class="profiellijstitem">
     <img src="afbeeldingen/img1.jpg" class="profielfoto">
@@ -43,8 +46,22 @@
     <h1 style="line-height:200px;">Huiswas</h1>
   </div>
 
+
+  <form action="opmerkingen.php" method="post">
+    <textarea name="comments" id="comments"></textarea>
+    <br><br>
+    <input type="submit" value="Klaag">
+  </form>
+
+
+  <?php
+  foreach(file('opmerkingen.csv') as $comment){
+    echo $comment, '<br>';
+  }
+  ?>
+
 </div>
-//maak een klaagmuur waarbij je iemand kunt selecteren die zijn huistaak niet heeft gedaan
+<a href="index.php">Terug</a>
 
 </div>
 

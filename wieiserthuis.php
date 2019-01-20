@@ -21,14 +21,9 @@ if (strpos($adressen, '192.168.1.128') !== false) {
     echo '';
 }
 
-
-
-
- ?>
+?>
 
 
 <html>
-
-
 
 </html>

@@ -17,18 +17,29 @@
             <option value="lana">Lana</option>
             <option value="joris">Joris</option>
             <option value="yorick">Yorick</option>
+            <option value="femke">Femke</option>
+            <option value="rick">Rick</option>
+            <option value="alex">Alex</option>
+            <option value="ej">EJ</option>
+            <option value="lieke">Lieke</option>
+            <option value="kris">Kris</option>
+            <option value="emma">Emma</option>
+            <option value="yana">Yana</option>
+            <option value="youri">Youri</option>
+            <option value="daan">Daan</option>
           </select><br>
 
+
           Wanneer heb je gekookt?<br>
-          <input name="datum" type="date" placeholder="dd-mm-jjjj"><br>
+          <input name="datum" type="date" placeholder="dd-mm-jjjj" required><br>
 
           Wat heb je gekookt?<br>
-          <input name="gerecht" type="text" placeholder="lasagne"><br>
+          <input name="gerecht" type="text" placeholder="lasagne" required><br>
 
           De kosten van het avondeten zijn<br>
-          €<input name="bedrag" type="number" step="0.01" placeholder="42,99"><br>
+          €<input name="bedrag" type="number" step="0.01" placeholder="42,99" required><br>
 
-          Wie hebben er meegegeten?<br>
+          Wie hebben er meegegeten? Klik ook jezelf aan.<br>
           <input type="hidden" name="lana" value=0>
           <input type="hidden" name="joris" value=0>
           <input type="hidden" name="yorick" value=0>
@@ -52,6 +63,8 @@
             <li><input type="checkbox" id="femke" name="femke" value="femke" /><label for="femke">Femke</label></li>
             <li><input type="checkbox" id="alex" name="alex" value="alex" /><label for="alex">Alex</label></li>
             <li><input type="checkbox" id="rick" name="rick" value="rick" /><label for="rick">Rick</label></li>
+            <li><input type="checkbox" id="lieke" name="lieke" value="lieke" /><label for="lieke">Lieke</label></li>
+            <li><input type="checkbox" id="youri" name="youri" value="youri" /><label for="youri">Youri</label></li>
           </ul><br>
           <input type="submit" value="Verhaal kosten">
 

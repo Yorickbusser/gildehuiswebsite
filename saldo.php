@@ -64,7 +64,7 @@ $femkegroen= 255-2*$femkerood;
 ?>
 
 
-<html>
+<html style="background-color: black;">
 
   <head>
     <title>Het Gildehuis</title>
@@ -73,6 +73,9 @@ $femkegroen= 255-2*$femkerood;
 
   <div class="saldoachtergrond">
     <div class="profiellijst">
+      <h1>Saldo-overzicht</h1>
+      Bekijk hier je saldo. Je kunt je schuld aflossen naar de rekening van het huis met IBAN NL83 INGB 0000 9517 45.
+      Aflossingen worden niet direct hier weergegeven.
 
       <div class="profiellijstitem">
         <img src="afbeeldingen/img1.jpg" class="profielfoto">
@@ -146,6 +149,7 @@ $femkegroen= 255-2*$femkerood;
         </h1>
       </div>
       </div>
+      <a href="index.php">Terug</a>
     </div>
 
 

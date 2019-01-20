@@ -4,7 +4,7 @@
   fclose($file_open);
 ?>
 
-<html>
+<html style="background-color: black;">
 
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,16 +12,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
-  <div class="saldoachtergrond">
+  <div class="declaratiesachtergrond">
     <div class="profiellijst">
       <h1>Declareren geslaagd</h1>
       <div class="profiellijstitem">
-        <img src="<?php echo "afbeeldingen/" . $_POST[kok] . ".jpg"; ?>" class="profielfoto">
+        <img src="<?php echo "afbeeldingen/" . $_POST["kok"] . ".jpg"; ?>" class="profielfoto">
         <?php
-          echo $_POST[datum],'<br>', $_POST[gerecht], '<br>', '€', $_POST[bedrag], '<br>';
+          echo '<br>', $_POST["datum"],'<br>',$_POST["gerecht"], '<br>', '€', $_POST["bedrag"], '<br>';
           $i=0;
           foreach($_POST as $eter) {
-            if($i>3){echo $eter, ', ';};
+            if($i>3 and $eter!=false){echo $eter, ', ';}
             $i=$i+1;
           };
         ?>

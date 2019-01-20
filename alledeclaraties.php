@@ -3,8 +3,8 @@
   $csv = array_map('str_getcsv', file('invoergegevens.csv'));
 ?>
 
-<!DOCTYPE html>
-<html>
+
+<html style="background-color: black;">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,14 +12,18 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<div class="saldoachtergrond">
+<div class="declaratiesachtergrond">
   <div class="profiellijst">
-
+    <h1>De Kooklijst</h1>
+    Dit is een overzicht van alles dat is gekookt. Een foto van de kok is te
+    zien naast de datum, het gerecht, de prijs en de meeeters.
+    <br><br>
     <?php $i=0; foreach (array_column($csv, 0) as $kok) {?>
       <div class="profiellijstitem">
         <img src="<?php echo "afbeeldingen/" . $kok . ".jpg"; ?>" class="profielfoto">
-        <?php echo $csv[$i][1], '<br>',
-                   $csv[$i][2], '<br>',
+        <?php echo '<br>',
+                   $csv[$i][1], '<br>',
+                   '<b>', $csv[$i][2], '</b>', '<br>',
                    '€', $csv[$i][3], '<br>',
                    $csv[$i][4], ', ', $csv[$i][5], ', ', $csv[$i][6], ', ',
                    $csv[$i][7], ', ', $csv[$i][8], ', ', $csv[$i][9], ', ',

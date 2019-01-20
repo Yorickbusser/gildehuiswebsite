@@ -20,8 +20,8 @@
 
     <div class="boodschappen">
       <div class="dividertekst">
-        <h1>Het Gildehuis</h1>
-        Ik wil de kosten van mijn boodschappen verhalen. Je kunt ook een overzicht
+        <h1>Eten</h1>
+        Je kunt hier de kosten van je boodschappen verhalen. Je kunt ook een overzicht
         van alle gekookte maaltijden bekijken.<br><br>
         <a href="declareren.php">Ik heb gekookt</a><br><br>
         <a href="alledeclaraties.php">Overzicht alle maaltijden</a>

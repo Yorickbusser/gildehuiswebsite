@@ -40,12 +40,10 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 .dividertekstlijst {
-
   text-align: left;
   position: absolute;
   max-width: 750px;
   top: 5%;
-
 }
 
 /*alle specifieke dividers*/
@@ -200,6 +198,7 @@ input[type=date]{
   width:50%;
 }
 input[type=submit]{
+  font-size: 20px;
   background-color: transparent;
   padding: 14px 20px;
   border-style: solid;
@@ -213,6 +212,12 @@ input[type=submit]{
   position: relative;
   left: 50%;
   transform: translate(-50%, 0%);
+}
+input[type=submit]:hover {
+  color: black;
+  background-color: #ffcc35;
+  padding: 14px 20px;
+  text-decoration: none;
 }
 
 label{
@@ -232,6 +237,12 @@ ul {
   columns: 3;
   -webkit-columns: 3;
   -moz-columns: 3;
+}
+textarea {
+  height: 100px;
+  width: 93vw;
+  max-width: 600px;
+
 }
 
 /*formulier voor declareren boodschappen met blur */
@@ -254,6 +265,7 @@ ul {
   z-index: 1;
   overflow: hidden;
   margin: auto;
+  margin-top:-250px;
   padding-left: 40px;
   padding-bottom: 40px;
   border-radius: 15px;
@@ -272,12 +284,21 @@ ul {
 /*stijl voor saldo-overzicht*/
 .saldoachtergrond {
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 1.0)
+    ), url(afbeeldingen/slapen.jpg);
+    height:80vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.declaratiesachtergrond {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 1.0)
     ), url(afbeeldingen/groepsfoto.jpg);
-  min-width: 600px;
-  background-position: top;
-  background-size: cover;
+    height:80vw;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
@@ -297,18 +318,17 @@ ul {
   margin-bottom:20px;
 }
 .profiellijst {
-  width: 600px;
+  max-width: 600px;
   position: relative;
   left: 50%;
   transform: translate(-50%, 0%);
+
 }
 .profielenachtergrond {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ), url(afbeeldingen/raampoetsen.jpg);
-  height: 2000px;
-  min-width: 600px;
   background-position: top;
   background-size: cover;
 }
